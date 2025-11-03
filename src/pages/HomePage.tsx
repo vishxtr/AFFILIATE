@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import { supabase, type Product } from './lib/supabase';
+import { supabase, type Product } from '../lib/supabase';
 import { Search, Filter as FilterIcon, SlidersHorizontal, ArrowUpDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import ProductCard from './components/ProductCard';
-import FilterSidebar from './components/FilterSidebar';
-import Pagination from './components/Pagination';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Breadcrumbs from './components/Breadcrumbs';
+import ProductCard from '../components/ProductCard';
+import FilterSidebar from '../components/FilterSidebar';
+import Pagination from '../components/Pagination';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([]);
