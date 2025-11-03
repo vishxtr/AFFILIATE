@@ -1,7 +1,27 @@
 {
-  "name": "react_repo",
+  "name": "affiliate-marketing-platform",
+  "version": "1.0.0",
+  "description": "Modern affiliate marketing platform built with React, TypeScript, and Supabase",
+  "author": "AFFILIATE Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishxtr/AFFILIATE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vishxtr/AFFILIATE/issues"
+  },
+  "homepage": "https://github.com/vishxtr/AFFILIATE#readme",
+  "keywords": [
+    "affiliate-marketing",
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss",
+    "supabase",
+    "ecommerce"
+  ],
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "pnpm install --prefer-offline && vite",
