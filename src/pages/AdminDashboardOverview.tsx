@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { supabase } from '@/lib/supabase';
-import { AdminLayout } from '@/components/admin/AdminSidebar';
-import AdminStats from '@/components/admin/AdminStats';
+import { useAuth } from './contexts/AuthContext';
+import { supabase } from './lib/supabase';
+import { AdminLayout } from './components/admin/AdminSidebar';
+import AdminStats from './components/admin/AdminStats';
 import { AlertCircle, CheckCircle, Clock, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { AdminLayout } from '@/components/admin/AdminSidebar';
-import { getActivityLogs, getActivityStats } from '@/lib/adminActivity';
+import { useAuth } from './contexts/AuthContext';
+import { AdminLayout } from './components/admin/AdminSidebar';
+import { getActivityLogs, getActivityStats } from './lib/adminActivity';
 import { Search, Filter, Calendar, User, Activity, AlertCircle, CheckCircle, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 

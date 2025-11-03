@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { supabase } from '@/lib/supabase';
-import { AdminLayout } from '@/components/admin/AdminSidebar';
+import { useAuth } from './contexts/AuthContext';
+import { supabase } from './lib/supabase';
+import { AdminLayout } from './components/admin/AdminSidebar';
 import { 
   Search, 
   Filter, 
@@ -17,7 +17,7 @@ import {
   CheckSquare
 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { logQueryStatusUpdated, logQueryDeleted } from '@/lib/adminActivity';
+import { logQueryStatusUpdated, logQueryDeleted } from './lib/adminActivity';
 
 interface Query {
   id: string;

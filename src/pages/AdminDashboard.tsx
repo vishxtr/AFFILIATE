@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { supabase, type Product } from '@/lib/supabase';
+import { useAuth } from './contexts/AuthContext';
+import { supabase, type Product } from './lib/supabase';
 import { LogOut, Plus, Trash2, Upload, AlertCircle, CheckCircle, X } from 'lucide-react';
 
 export default function AdminDashboard() {

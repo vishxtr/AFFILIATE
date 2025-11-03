@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { supabase } from '@/lib/supabase';
-import { AdminLayout } from '@/components/admin/AdminSidebar';
+import { useAuth } from './contexts/AuthContext';
+import { supabase } from './lib/supabase';
+import { AdminLayout } from './components/admin/AdminSidebar';
 import { Lock, Eye, EyeOff, AlertCircle, CheckCircle, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 

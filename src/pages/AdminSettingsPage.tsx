@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { supabase } from '@/lib/supabase';
-import { AdminLayout } from '@/components/admin/AdminSidebar';
+import { useAuth } from '../../contexts/AuthContext';
+import { supabase } from '../../lib/supabase';
+import { AdminLayout } from '../../components/admin/AdminSidebar';
 import { Save, AlertCircle, CheckCircle, X } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { logSettingsUpdated } from '@/lib/adminActivity';
+import { logSettingsUpdated } from '../../lib/adminActivity';
 
 interface Setting {
   id: string;

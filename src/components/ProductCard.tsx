@@ -1,5 +1,5 @@
 import { Star, ExternalLink, Eye } from 'lucide-react';
-import { Product } from '@/lib/supabase';
+import { Product } from './lib/supabase';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 

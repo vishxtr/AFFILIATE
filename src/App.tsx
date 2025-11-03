@@ -1,23 +1,23 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from '@/contexts/AuthContext';
+import { AuthProvider } from './contexts/AuthContext';
 import { lazy, Suspense } from 'react';
 
 // Lazy load pages for code splitting
-const HomePage = lazy(() => import('@/pages/HomePage'));
-const AboutPage = lazy(() => import('@/pages/AboutPage'));
-const ContactPage = lazy(() => import('@/pages/ContactPage'));
-const PrivacyPolicyPage = lazy(() => import('@/pages/PrivacyPolicyPage'));
-const TermsOfServicePage = lazy(() => import('@/pages/TermsOfServicePage'));
-const AdminLogin = lazy(() => import('@/pages/AdminLogin'));
-const AdminDashboard = lazy(() => import('@/pages/AdminDashboard'));
-const AdminDashboardOverview = lazy(() => import('@/pages/AdminDashboardOverview'));
-const AdminSettingsPage = lazy(() => import('@/pages/AdminSettingsPage'));
-const AdminQueriesPage = lazy(() => import('@/pages/AdminQueriesPage'));
-const AdminProductsPage = lazy(() => import('@/pages/AdminProductsPage'));
-const AdminAnalyticsPage = lazy(() => import('@/pages/AdminAnalyticsPage'));
-const AdminSystemPage = lazy(() => import('@/pages/AdminSystemPage'));
-const AdminActivityLogsPage = lazy(() => import('@/pages/AdminActivityLogsPage'));
-const AdminPasswordChangePage = lazy(() => import('@/pages/AdminPasswordChangePage'));
+const HomePage = lazy(() => import('./pages/HomePage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
+const TermsOfServicePage = lazy(() => import('./pages/TermsOfServicePage'));
+const AdminLogin = lazy(() => import('./pages/AdminLogin'));
+const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
+const AdminDashboardOverview = lazy(() => import('./pages/AdminDashboardOverview'));
+const AdminSettingsPage = lazy(() => import('./pages/AdminSettingsPage'));
+const AdminQueriesPage = lazy(() => import('./pages/AdminQueriesPage'));
+const AdminProductsPage = lazy(() => import('./pages/AdminProductsPage'));
+const AdminAnalyticsPage = lazy(() => import('./pages/AdminAnalyticsPage'));
+const AdminSystemPage = lazy(() => import('./pages/AdminSystemPage'));
+const AdminActivityLogsPage = lazy(() => import('./pages/AdminActivityLogsPage'));
+const AdminPasswordChangePage = lazy(() => import('./pages/AdminPasswordChangePage'));
 
 // Loading component
 function LoadingSpinner() {

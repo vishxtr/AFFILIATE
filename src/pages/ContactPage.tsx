@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MessageSquare, Send, CheckCircle, AlertCircle } from 'lucide-react';
-import { supabase } from '@/lib/supabase';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import { supabase } from './lib/supabase';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Breadcrumbs from './components/Breadcrumbs';
 
 
 export default function ContactPage() {

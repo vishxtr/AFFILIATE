@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Star, ExternalLink } from 'lucide-react';
-import { Product } from '@/lib/supabase';
+import { Product } from './lib/supabase';
 
 interface HeroBannerProps {
   featuredProducts: Product[];

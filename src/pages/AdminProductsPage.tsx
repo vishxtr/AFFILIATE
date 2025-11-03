@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { supabase, type Product } from '@/lib/supabase';
-import { AdminLayout } from '@/components/admin/AdminSidebar';
+import { useAuth } from './contexts/AuthContext';
+import { supabase, type Product } from './lib/supabase';
+import { AdminLayout } from './components/admin/AdminSidebar';
 import { Plus, Trash2, Upload, Search, AlertCircle, CheckCircle, X, Edit } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { logProductCreated, logProductUpdated, logProductDeleted } from '@/lib/adminActivity';
+import { logProductCreated, logProductUpdated, logProductDeleted } from './lib/adminActivity';
 
 interface Notification {
   type: 'success' | 'error';
